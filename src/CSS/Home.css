@@ -1,0 +1,371 @@
+.Home {
+    background-color: #000;
+}
+
+.Intro {
+    margin-top: 60px;
+}
+
+.VidBG {
+    position: relative;
+    width: 100%;
+    filter: grayscale(2);
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 68.41%, #000 99.76%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 81.02%, #000 100%); */
+}
+
+.brandcolor {
+    color: #49A3DA !important;
+}
+
+.IntroContent {
+    margin: 1em 0px;
+}
+
+.IntroContent .card-title,
+.IntroContent .card-text {
+    display: block;
+    padding-top: 3em;
+    margin-left: 90px;
+    margin-right: 90px;
+    /* width: 980px; */
+    text-align: left;
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4px;
+}
+
+.IntroContent .card-text {
+    padding-top: 0em;
+}
+
+
+.button1 {
+    margin-left: 43em !important;
+    margin-top: 160px !important;
+    display: flex !important;
+    width: fit-content !important;
+    padding: 15px !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    border-radius: 6px !important;
+    border: 1px solid #FFF !important;
+    background: var(--Primary-Color-Dark, #464646) !important;
+}
+
+.button1:hover {
+    background: var(--Secondary-color, #49A3DA) !important;
+}
+
+.button1:active {
+    /* border-radius: 6px; */
+    border: 1px solid #000 !important;
+    /* background: var(--Secondary-color, #49A3DA); */
+}
+
+
+.card-img {
+    height: 55em;
+    filter: grayscale(2);
+
+}
+
+.AboutContent {
+    margin-top: 30em;
+    text-align: left;
+    height: auto;
+}
+
+.AboutContent .card-title {
+    font-family: Oswald;
+    /* font-size: 3em; */
+    font-family: Oswald;
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    padding-left: 90px;
+}
+
+.AboutContent .card-text {
+    width: 75%;
+    font-family: Fira Sans;
+    /* font-size: 3em; */
+    font-size: 2em;
+    font-style: normal;
+    /* font-weight: 700; */
+    line-height: normal;
+    /* letter-spacing: 2px;    */
+    padding-left: 90px;
+
+}
+
+
+.Timeline {
+    background-color: black;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.containerHM {
+    padding: 10px 50px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.containerHM::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: #61D4E8;
+    border: 4px solid #2DA1E7;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -13px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .containerHM {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .containerHM::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
+
+
+.containerHM .content h2 {
+    font-family: Oswald;
+}
+
+.BlogSec {
+    background-color: #000;
+    /* width: 1000px; */
+    padding: 10px 20em;
+    padding-bottom: 50px !important;
+}
+
+.BlogSec .card-title {
+    display: block;
+    /* padding-top: 3em; */
+    /* margin-left: 90px; */
+    /* margin-right: 90px; */
+    /* width: 980px; */
+    text-align: center;
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4px;
+}
+
+.blog-title {
+    display: block;
+    /* padding-top: 3em; */
+    /* margin-left: 90px; */
+    /* margin-right: 90px; */
+    /* width: 980px; */
+    text-align: center;
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4px;
+}
+
+.blogcards {
+    margin: 0px 50px;
+    margin-bottom: 10px !important;
+}
+
+.blogcards .card-deck .card .card-body {
+    background-color: grey;
+}
+
+.text-muted {
+    color: #0055ff !important;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+
+    .IntroContent .card-title,
+    .IntroContent .card-text,
+    .AboutContent .card-title,
+    .BlogSec .card-title {
+        font-size: 2em;
+        margin-top: 0px;
+        padding-top: 1em;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .IntroContent .card-text {
+        padding-top: 0px;
+    }
+
+    .AboutContent {
+        margin-top: 0em;
+        /* font-size: 1em !important */
+    }
+
+    .left::after,
+    .right::after {
+        left: 19px;
+    }
+
+    .button1 {
+        font-size: medium;
+        margin-left: 50px !important;
+        margin-top: 0px !important;
+        display: flex;
+        width: fit-content;
+        border-radius: 6px;
+        border: 1px solid #FFF;
+        background: var(--Primary-Color-Dark, #464646);
+    }
+
+    .button1:hover {
+        background: var(--Secondary-color, #49A3DA);
+    }
+
+    .breaker {
+        display: none;
+    }
+
+    .BlogSec .card-title {
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+
+    .AboutContent .card-text {
+        font-size: 1.5em;
+    }
+
+    .AboutContent {
+        padding-top: 90px;
+    }
+
+    .card .card-img {
+        height: 50em;
+    }
+
+    .content {
+        padding: 2px;
+    }
+}

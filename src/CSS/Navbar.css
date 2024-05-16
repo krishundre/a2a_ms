@@ -1,0 +1,55 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.Navlogo {
+    width: 15em;
+    height: 3.25em;
+    /* background-color: black; */
+}
+
+.navbar {
+    background-color: black !important;
+}
+
+.threelines {
+    background-color: white;
+}
+
+.nav-item {
+    color: white !important;
+    margin: 0em 1.5em;
+}
+
+.nav-link {
+    color: #777777 !important;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    transition: all .5s ease-in;
+    margin: 0px 2px;
+}
+
+.nav-link:hover {
+    color: #49A3DA !important;
+
+}
+
+.navbar-set {
+    padding-left: 27em;
+}
+
+@media (max-width: 576px) {
+    .navbar-set {
+        padding-left: 0em;
+    }
+}
