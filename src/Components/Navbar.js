@@ -2,10 +2,10 @@ import '../CSS/Navbar.css'
 import logo from '../Assets/Logo_Png-02.png'
 import { Routes, Route, Link, BrowserRouter, Navigate } from 'react-router-dom';
 import Home from './Home';
-// import Contact from './ContactUs';
+import Contact from './ContactUs';
 import Vehicle from './Vehicle';
 import Technology from './Technology';
-// import Career from './Career';
+import Career from './Career';
 
 function Navbar() {
     return (
@@ -44,10 +44,10 @@ function Navbar() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/Vehicle" element={<Vehicle />} />
-                    {/* <Route path="/Contact" element={<Contact />} /> */}
+                    <Route path="/Contact" element={<Contact />} />
                     <Route path="/Technology" element={<Technology />} />
-                    {/* <Route path="/Career" element={<Career />} /> */}
-                    {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
+                    <Route path="/Career" element={<Career />} />
+                    <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
             </div>
         </BrowserRouter>
