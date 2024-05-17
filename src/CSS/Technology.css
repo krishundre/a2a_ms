@@ -1,0 +1,99 @@
+.Technology {
+    margin-top: 68px;
+    background-color: black;
+}
+
+.TechnologyTitle {
+    display: block;
+    /* padding-top: 3em; */
+    margin-left: 90px;
+    margin-right: 90px;
+    /* width: 980px; */
+    text-align: center;
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4px;
+}
+
+.TechCard {
+    background-color: black !important;
+    width: 100em;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.card-imgTC {
+    margin: 10px 50px;
+    border-radius: 10px;
+    height: 45em;
+    /* width: 115em; */
+}
+
+.Technology .Tech1 .card .card-titleTC {
+    display: block;
+    padding-top: 10em;
+    margin-left: 90px;
+    margin-right: 90px;
+    /* width: 980px; */
+    text-align: left;
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.Technology .Tech1 .card .card-textTC {
+    display: block;
+    /* padding-top: 3em; */
+    margin-left: 90px;
+    margin-right: 90px;
+    /* width: 980px; */
+    text-align: left;
+    color: #FFF;
+    font-family: Fira Sans;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.Technology .Tech2 .card .card-titleTC {
+    text-align: right;
+    display: block;
+    padding-top: 10em;
+    margin-left: 90px;
+    margin-right: 90px;
+    /* width: 980px; */
+    /* text-align: left; */
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.Technology .Tech2 .card .card-textTC {
+    display: block;
+    /* padding-top: 3em; */
+    margin-left: 90px;
+    margin-right: 90px;
+    /* width: 980px; */
+    text-align: right;
+    color: #FFF;
+    font-family: Fira Sans;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+}
