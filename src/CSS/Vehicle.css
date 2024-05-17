@@ -1,0 +1,167 @@
+.VehicleSec {
+    margin-top: 60px;
+    background-color: black;
+
+}
+
+.VehicleCard {
+    padding: 0px 50px;
+
+}
+
+.VehicleName {
+    display: block;
+    padding-top: 3em;
+    /* margin-left: 90px; */
+    /* margin-right: 90px; */
+    /* width: 980px; */
+    text-align: left;
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4px;
+}
+
+.VehicleDescrip {
+    width: 75%;
+    font-family: Fira Sans;
+    /* font-size: 3em; */
+    font-size: 2em;
+    font-style: normal;
+    /* font-weight: 700; */
+    line-height: normal;
+    text-align: left;
+    /* letter-spacing: 2px;    */
+}
+
+.facts {
+    text-align: left;
+    font-family: Fira Sans;
+    font-size: 1.5em;
+}
+
+.FactsContent {
+    margin-top: 15px;
+}
+
+.Factstitle {
+    font-family: Oswald;
+    font-size: 2em;
+
+}
+
+.FactsContent li {
+    font-family: Fira Sans;
+
+}
+
+/* .RocketSec {
+    display: block;
+    position: relative;
+
+}
+
+.RocketSec .container {
+    height: 500px;
+    position: relative;
+
+    position: absolute;
+}
+
+.container-fluid {
+    background-color: #2196F3;
+    color: #fff;
+    height: 200px;
+}
+
+.affix {
+    top: 20px;
+}
+
+div.col-sm-9 div {
+    height: 250px;
+    font-size: 28px;
+}
+
+#section1 {
+    color: #fff;
+    background-color: #1E88E5;
+}
+
+#section2 {
+    color: #fff;
+    background-color: #673ab7;
+}
+
+#section3 {
+    color: #fff;
+    background-color: #ff9800;
+}
+
+#section41 {
+    color: #fff;
+    background-color: #00bcd4;
+}
+
+#section42 {
+    color: #fff;
+    background-color: #009688;
+}
+
+@media screen and (max-width: 810px) {
+
+    #section1,
+    #section2,
+    #section3,
+    #section41,
+    #section42 {
+        margin-left: 150px;
+    }
+} */
+
+@media (max-width: 576px) {
+
+    .VehicleName,
+    .Factstitle {
+        display: block;
+        margin-top: 1em;
+        /* width: 980px; */
+        text-align: left;
+        color: #FFF;
+        font-family: Oswald;
+        font-size: 2em;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0px;
+        letter-spacing: 1px;
+    }
+
+    .facts {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .FactsContent li {
+        font-size: large;
+    }
+
+    ul {
+        display: inline-block;
+    }
+
+    .VehicleDescrip {
+        color: #FFF;
+        text-align: left;
+        font-size: 15px;
+        font-weight: 200;
+        letter-spacing: 0.2px;
+        padding-left: 1em;
+        padding: 0px;
+        margin: 1em 0.3em;
+        /* padding-top: 2em; */
+    }
+}
